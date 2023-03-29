@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/root_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <com.realgear.readable_bottom_bar.ReadableBottomBar
+        android:id="@+id/readable_bottom_bar"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:rbb_selectedTabType="text"
+        app:rbb_indicatorAppearance="round"
+        app:rbb_indicatorMargin="16dp"
+        app:rbb_indicatorHeight="4dp"
+        app:rbb_tabColor="@color/teal_200"
+        app:rbb_tabColorSelected="@color/material_dynamic_primary20"
+        app:rbb_tabs="@menu/navigation_bar"
+        app:rbb_selectedIndex="0"
+        />
+
+
+</LinearLayout>

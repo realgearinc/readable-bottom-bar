@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ReadableBottomBar">
+        <attr name="rbb_selectedTabType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="icon" value="1" />
+        </attr>
+
+        <attr name="rbb_tabAnimationSelected" format="enum">
+            <enum name="none" value="0" />
+            <enum name="slide" value="1" />
+            <enum name="fade" value="2" />
+        </attr>
+        <attr name="rbb_tabAnimation" format="enum">
+            <enum name="none" value="0" />
+            <enum name="slide" value="1" />
+            <enum name="fade" value="2" />
+        </attr>
+        <attr name="rbb_animationDuration" format="integer" />
+        <attr name="rbb_animationInterpolator" format="reference" />
+
+        <attr name="rbb_tabColorSelected" format="color" />
+        <attr name="rbb_tabColorDisabled" format="color" />
+        <attr name="rbb_tabColor" format="color" />
+
+        <!-- Indicator -->
+        <attr name="rbb_indicatorColor" format="color" />
+        <attr name="rbb_indicatorHeight" format="dimension" />
+        <attr name="rbb_indicatorMargin" format="dimension" />
+        <attr name="rbb_indicatorAppearance" format="enum">
+            <enum name="invisible" value="0" />
+            <enum name="square" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+        <attr name="rbb_indicatorLocation" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
+        <attr name="rbb_indicatorAnimation" format="enum">
+            <enum name="none" value="0" />
+            <enum name="slide" value="1" />
+            <enum name="fade" value="2" />
+        </attr>
+        <attr name="rbb_indicatorStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="halved" value="1" />
+        </attr>
+
+        <attr name="rbb_tabs" format="reference" />
+        <attr name="rbb_selectedIndex" format="integer" />
+        <attr name="rbb_selectedTabId" format="reference" />
+
+        <attr name="rbb_rippleEnabled" format="boolean" />
+        <attr name="rbb_rippleColor" format="color" />
+
+        <attr name="rbb_textAppearance" format="reference" />
+        <attr name="rbb_textStyle" format="flags">
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+            <flag name="normal" value="0" />
+        </attr>
+        <attr name="rbb_textSize" format="dimension" />
+        <attr name="rbb_iconSize" format="dimension" />
+
+        <!-- Badge -->
+        <attr name="rbb_badgeAnimation" format="enum">
+            <enum name="none" value="0" />
+            <enum name="scale" value="1" />
+            <enum name="fade" value="2" />
+        </attr>
+        <attr name="rbb_badgeAnimationDuration" format="integer" />
+        <attr name="rbb_badgeBackgroundColor" format="color" />
+        <attr name="rbb_badgeTextColor" format="color" />
+        <attr name="rbb_badgeTextSize" format="dimension" />
+
+    </declare-styleable>
+
+
+</resources>
