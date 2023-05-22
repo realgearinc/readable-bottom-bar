@@ -52,7 +52,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.realgear"
                 artifactId = "readable-bottom-bar"
-                version = "1.0.2"
+                version = "1.0.6"
 
                 from(components["release"])
             }

@@ -13,12 +13,13 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
-
     <com.realgear.readable_bottom_bar.ReadableBottomBar
         android:id="@+id/readable_bottom_bar"
         android:background="#FFF"
         android:layout_width="match_parent"
         android:layout_height="52dp"
+        app:rbb_indicatorStyle="halved"
+        app:rbb_indicatorLocation="bottom"
         app:rbb_selectedTabType="text"
         app:rbb_indicatorAppearance="round"
         app:rbb_indicatorMargin="16dp"
@@ -28,6 +29,5 @@
         app:rbb_tabs="@menu/navigation_bar"
         app:rbb_selectedIndex="0"
         />
-
 
 </LinearLayout>

@@ -165,8 +165,8 @@ internal class TabIndicator(
                         val parentHeight = parent.height.toFloat()
                         when(bottomBar.indicatorStyle.indicatorRectStyle) {
                             ReadableBottomBar.IndicatorStyle.NORMAL -> {
-                                top = parentHeight
-                                bottom = indicatorHeight
+                                top = parentHeight - indicatorHeight
+                                bottom = parentHeight
                             }
                             ReadableBottomBar.IndicatorStyle.HALVED -> {
                                 top = parentHeight - (indicatorHeight / 2)
