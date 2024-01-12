@@ -253,11 +253,18 @@ class ReadableBottomBar @JvmOverloads constructor(
             { lastIndex: Int, lastTab: Tab?, newIndex: Int, newTab: Tab, animated: Boolean ->
                 tabIndicator.setSelectedIndex(lastIndex, newIndex, animated)
 
-                if (viewPager?.currentItem != newIndex)
-                    viewPager?.currentItem = newIndex
+                val count1 = viewPager?.adapter?.count
+                val count2 = viewPager2?.adapter?.itemCount
 
-                if (viewPager2?.currentItem != newIndex)
-                    viewPager2?.setCurrentItem(newIndex)
+                if (count1 != null) {
+                    if ((viewPager?.currentItem != newIndex) && (count1 > newIndex))
+                        viewPager?.currentItem = newIndex
+                }
+
+                if (count2 != null) {
+                    if ((viewPager2?.currentItem != newIndex) && (count2 > newIndex))
+                        viewPager2?.setCurrentItem(newIndex)
+                }
 
                 onTabSelectListener?.onTabSelected(lastIndex, lastTab, newIndex, newTab)
                 onTabSelected.invoke(newTab)
